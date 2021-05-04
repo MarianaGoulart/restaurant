@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/Hero_Image.png');
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: color-burn;
+    background-size: cover;
+}
+
+.header-modal {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+}
+
+nav {
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0 5em;
+}
+
+.logo-image {
+    width: 120%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 5em;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.banner-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-title h1 {
+    color: rgba(255,255,255,1);
+    font-size: 5em;
+    letter-spacing: 0.05em;
+    padding: 3em 0 0.5em 0;
+}
+
+.banner-title p {
+    color: rgba(255,255,255,1);
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    padding: 0 0 3em 0;
+}
+
+.banner-title a {
+    color: rgba(255,255,255,1);
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    background-color: #18384b;
+    padding: 1.5em 3em;
+    border-radius: 0.3em;
+    text-decoration: none;
+}
+
+article {
+    height: 100%;
+}
+
+.container {
+    padding: 0 20rem;
+}
+
+.container h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 2em 0;
+    color: rgb(148, 148, 148);
+    text-align: center;
+}
+
+.article-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-title h2 {
+    font-size: 3em;
+    padding: .25em 0;
+    color: rgb(60, 60, 60);
+}
+
+.article-title h2:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 0.25em 0;
+    border-bottom: rgb(60, 60, 60) solid 3px;
+}
+
+.article-image {
+    padding: 10em 0 2.5em 0;
+    width: 7%;
+}
+
+.story {
+    color: rgb(148, 148, 148);
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: center;
+    padding: 1em 0;
+    line-height: 1.5em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-image {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    padding: 3em 0;
+    object-fit: cover;
+}
+
+.menu-item h4 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.menu-description {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 1.5em 0;
+    color: rgb(212, 212, 212);
+    text-align: center;
+}
+
+.menu-price {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(148, 148, 148);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em 0;
+}
+
+.form label {
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form select, button {
+    width: 20em;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+    padding: 1em 0.5em;
+    text-transform: uppercase;
+    color: rgb(212, 212, 212);
+    border: rgb(212, 212, 212) solid 1px;
+}
+
+.form input {
+    width: 19em;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(212, 212, 212);
+    padding: 1em 0.5em;
+    text-transform: uppercase;
+    border: rgb(212, 212, 212) solid 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form button {
+    margin: 2em 0;
+    padding: 2em 0;
+    border-radius: 5px;
+    color:rgb(255, 255, 255, 1);
+    background-color: rgba(24,56,75,1);
+}
+
+.footer {
+    background-color: rgba(60,60,60,1);
+    padding: 128px 32px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-right {
+    color:rgba(255,255,255,1);
+    width: 30%;
+}
+
+.footer-copyrights {
+    padding: 0 0 64px 0;
+}
+
+.footer-copyrights h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding: 0 0 16px 0;
+}
+
+.footer-copyrights p {
+    font-size: 0.75em;
+    color: silver;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.footer-content {
+    width: 20%;
+    padding: 32px;
+    color: rgb(255, 255, 255, 1);
+    font-size: 1em;
+}
+
+.footer-content h4 {
+    font-size: 0.75em;
+    padding: 0 0 16px 0;
+    text-transform: uppercase;
+}
+
+.footer-content p {
+    font-size: 0.75em;
+    padding: 8px 0;
+}
